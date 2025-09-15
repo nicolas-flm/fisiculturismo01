@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }                                                                                       
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #121212;
+            /* Fundo configurável: troque o URL abaixo para mudar a imagem */
+            background-image: url(Imagem/olympia.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #f0f0f0;
+            padding-top: 70px; /* espaço para header fixo */
+            text-align: center; /* centraliza texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* centraliza horizontalmente */
+        }
+
+        a {
+            color: #e63946; /* vermelho */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6b6b;
+            text-decoration: underline;
+        }
+
+        header.header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.95);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+            z-index: 1000;
+            display: flex;
+            justify-content: center; /* centraliza o conteúdo do header */
+        }
+
+        header .container {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* centraliza links */
+            padding: 15px 20px;
+            gap: 40px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e63946; /* vermelho */
+            cursor: default;
+        }
+
+        nav.navbar a {
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 5px 10px;
+        }
+
+        section {
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            background-color: rgba(0,0,0,0.6);
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(230, 57, 70, 0.7);
+            text-align: center; /* garante centralização do texto */
+        }
+
+        section h1, section h2, section h3 {
+            margin-bottom: 15px;
+            color: #e63946; /* vermelho */
+        }
+
+        section p {
+            margin-bottom: 20px;
+            text-align: center; /* centraliza parágrafos */
+        }
+
+        hr {
+            border: 1px solid #e63946;
+            margin: 30px auto;
+            width: 80%;
+            opacity: 0.7;
+        }
+
+        /* Listas */
+        ul, ol {
+            margin: 0 auto 20px auto;
+            max-width: 600px;
+            text-align: left; /* listas alinhadas à esquerda para melhor leitura */
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        /* Imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto 30px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(230, 57, 70, 0.7);
+        }
+
+        /* Tabela */
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            background-color: rgba(230, 57, 70, 0.1);
+            color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(230, 57, 70, 0.5);
+            margin: 0 auto 60px auto;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 0;
+            color: #e63946;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e63946;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e63946;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav.navbar a {
+                margin: 5px 10px;
+            }
+
+            section {
+                width: 95%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            ul, ol {
+                max-width: 100%;
+            }
+
+            table {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista das Categorias do Mr Olympia</h1>
+    <p>
+        O Campeonato é dividido em diversas categorias tanto para as mulheres quanto para os homens. A partir disso, segue separadamente as categorias, tanto para mulheres quanto para os homens, uma rápida contextualização de cada categoria com seus principais nomes históricos e atuais.
+    </p>
+    <hr>
+
+    <h2>Homens</h2>
+
+    <h3>1. Mens Physique</h3>
+    <p>
+        A categoria Mens Physique é como se fosse, em termos leigos, apresentar um shape de praia, com menos foco nas partes inferiores do corpo (tanto que os atletas posam de shorts), dando maior ênfase em porções como dorsais, peitos e ombros. O peso máximo da categoria é de 125KG pela IFBB.
+    </p>
+    <img src="D:\Não Apagar - VsCode Nicolas\Projeto001\Imagem\mens.png" alt="">
+    <h2>Grandes nomes:</h2>
+    <ul>
+        <li>Nomes Atuais
+            <ol>
+                <li>Ryan Terry</li>
+                <li>Ali Bilal</li>
+                <li>Erin Banks</li>
+                <li>Emanuel Hunter</li>
+                <li>Edvan Palmeira</li>
+            </ol>
+        </li>
+        <li>Nomes Históricos
+            <ol>
+                <li>Jeremy Buendia</li>
+                <li>Brandon Hendrickson</li>
+                <li>Mark Anthony Wingson</li>
+                <li>Raymont Edmonds</li>
+                <li>Ryan Terry</li>
+            </ol>
+        </li>
+    </ul>
+
+    <h3>2. Classic Physique</h3>
+    <p>
+        A categoria Classic Physique, o próprio nome já condiz: apresentar um shape clássico para os jurados. Essa categoria é a mais famosa do cenário do fisiculturismo, e é nela que existe a maior simetria que um corpo pode alcançar. Nela, tudo precisa ser simétrico, tanto o conjunto de pernas quanto o de tronco. Além disso, as poses não são feitas de shorts, e sim de cuecas especiais.
+    </p>
+    <img src="D:\Não Apagar - VsCode Nicolas\Projeto001\Imagem\classic.png" alt="">
+    <h2>Grandes nomes:</h2>
+    <ul>
+        <li>Nomes Atuais
+            <ol>
+                <li>Ramon Dino</li>
+                <li>Mike Summerfield</li>
+                <li>Wesley Vissers</li>
+                <li>Breon Ansley</li>
+                <li>Urs Kalecinski</li>
+            </ol>
+        </li>
+        <li>Nomes Históricos
+            <ol>
+                <li>Chris Bumstead (CBum)</li>
+                <li>Danny Hester</li>
+                <li>Breon Ansley</li>
+            </ol>
+        </li>
+    </ul>
+
+    <h3>3. Open Bodybuilding</h3>
+    <p>
+        A categoria Open Bodybuilding é a categoria extrema do fisiculturismo e do Mr. Olympia. Nela os atletas são levados ao seu máximo, visto que é uma categoria onde não é necessário ter uma faixa limite de peso como na Classic e na Mens. Os atletas vivem no limite de absolutamente tudo e uma vida totalmente restrita, para ser considerado o Mr. Olympia. A premiação nessa categoria é a maior.
+    </p>
+    <img src="D:\Não Apagar - VsCode Nicolas\Projeto001\Imagem\open.png" alt="">
+    <h2>Grandes nomes:</h2>
+    <ul>
+        <li>Nomes Atuais
+            <ol>
+                <li>Samson Dauda</li>
+                <li>Nick Walker</li>
+                <li>Derek Lunsford</li>
+                <li>God Vitto</li>
+                <li>Rafael Brandão</li>
+            </ol>
+        </li>
+        <li>Nomes Históricos
+            <ol>
+                <li>Ronie Coleman</li>
+                <li>Kevin Levrone</li>
+                <li>Jay Cutler</li>
+                <li>Arnold Schwarzenegger</li>
+                <li>Dorian Yates</li>
+            </ol>
+        </li>
+    </ul>   
+</body>
+</html>

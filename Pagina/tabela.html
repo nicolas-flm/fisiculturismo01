@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }                                                                                       
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #121212;
+            /* Fundo configurável: troque o URL abaixo para mudar a imagem */
+            background-image: url(Imagem/olympia.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #f0f0f0;
+            padding-top: 70px; /* espaço para header fixo */
+            text-align: center; /* centraliza texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* centraliza horizontalmente */
+        }
+
+        a {
+            color: #e63946; /* vermelho */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6b6b;
+            text-decoration: underline;
+        }
+
+        header.header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.95);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+            z-index: 1000;
+            display: flex;
+            justify-content: center; /* centraliza o conteúdo do header */
+        }
+
+        header .container {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* centraliza links */
+            padding: 15px 20px;
+            gap: 40px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e63946; /* vermelho */
+            cursor: default;
+        }
+
+        nav.navbar a {
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 5px 10px;
+        }
+
+        section {
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            background-color: rgba(0,0,0,0.6);
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(230, 57, 70, 0.7);
+            text-align: center; /* garante centralização do texto */
+        }
+
+        section h1, section h2, section h3 {
+            margin-bottom: 15px;
+            color: #e63946; /* vermelho */
+        }
+
+        section p {
+            margin-bottom: 20px;
+            text-align: center; /* centraliza parágrafos */
+        }
+
+        hr {
+            border: 1px solid #e63946;
+            margin: 30px auto;
+            width: 80%;
+            opacity: 0.7;
+        }
+
+        /* Listas */
+        ul, ol {
+            margin: 0 auto 20px auto;
+            max-width: 600px;
+            text-align: left; /* listas alinhadas à esquerda para melhor leitura */
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        /* Imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto 30px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(230, 57, 70, 0.7);
+        }
+
+        /* Tabela */
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            background-color: rgba(230, 57, 70, 0.1);
+            color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(230, 57, 70, 0.5);
+            margin: 0 auto 60px auto;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 0;
+            color: #e63946;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e63946;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e63946;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav.navbar a {
+                margin: 5px 10px;
+            }
+
+            section {
+                width: 95%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            ul, ol {
+                max-width: 100%;
+            }
+
+            table {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Maiores Vencedores da História do Mr. Olympia</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Títulos</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kevin Levrone</td>
+                <td>0 (Menção Honrosa, o Rei sem Coroa)</td>
+                <td>Open</td>
+            </tr>
+            <tr>
+                <td>Arnold Schwarzenegger</td>
+                <td>7 (O Pai do Fisiculturismo)</td>
+                <td>Open</td>
+            </tr>
+            <tr>
+                <td>Ronie Coleman</td>
+                <td>8 (O Maior Físico/Nome da História)</td>
+                <td>Open</td>
+            </tr>
+            <tr>
+                <td>Phil Heath</td>
+                <td>7 (The Gift / O Presente da Genética)</td>
+                <td>Open</td>
+            </tr>
+            <tr>
+                <td>Ramon Dino</td>
+                <td>0 (Menção Honrosa / O Próximo Nome da Classic)</td>
+                <td>Classic Physique</td>
+            </tr>
+            <tr>
+                <td>Chris Bumstead</td>
+                <td>6 (CBum / O Maior da História da Classic)</td>
+                <td>Classic Physique</td>
+            </tr>
+            <tr>
+                <td>Danny Hester</td>
+                <td>1 (The Pioneer / O Pioneiro / O Primeiro Campeão)</td>
+                <td>Classic Physique</td>
+            </tr>
+            <tr>
+                <td>Breon Ansley</td>
+                <td>2 (The Black Swan / O Cisne Negro)</td>
+                <td>Classic Physique</td>
+            </tr>
+            <tr>
+                <td>Breno Oliveira</td>
+                <td>0 (Menção Honrosa / Tenente Breno)</td>
+                <td>Mens Physique</td>
+            </tr>
+            <tr>
+                <td>Jeremy Buendia</td>
+                <td>4 (O The Gift da Mens)</td>
+                <td>Mens Physique</td>
+            </tr>
+            <tr>
+                <td>Brendon Hendrickson</td>
+                <td>3</td>
+                <td>Mens Physique</td>
+            </tr>
+            <tr>
+                <td>Ryan Terry</td>
+                <td>3</td>
+                <td>Mens Physique</td>
+            </tr>
+        </tbody>
+    </table> 
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisiculturismo - Página Principal</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }                                                                                       
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #121212;
+            /* Fundo configurável: troque o URL abaixo para mudar a imagem */
+            background-image: url(Imagem/olympia.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #f0f0f0;
+            padding-top: 70px; /* espaço para header fixo */
+            text-align: center; /* centraliza texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* centraliza horizontalmente */
+        }
+
+        a {
+            color: #e63946; /* vermelho */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6b6b;
+            text-decoration: underline;
+        }
+
+        header.header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(18, 18, 18, 0.95);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+            z-index: 1000;
+            display: flex;
+            justify-content: center; /* centraliza o conteúdo do header */
+        }
+
+        header .container {
+            max-width: 1100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* centraliza links */
+            padding: 15px 20px;
+            gap: 40px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e63946; /* vermelho */
+            cursor: default;
+        }
+
+        nav.navbar a {
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 5px 10px;
+        }
+
+        section {
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            background-color: rgba(0,0,0,0.6);
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(230, 57, 70, 0.7);
+            text-align: center; /* garante centralização do texto */
+        }
+
+        section h1, section h2, section h3 {
+            margin-bottom: 15px;
+            color: #e63946; /* vermelho */
+        }
+
+        section p {
+            margin-bottom: 20px;
+            text-align: center; /* centraliza parágrafos */
+        }
+
+        hr {
+            border: 1px solid #e63946;
+            margin: 30px auto;
+            width: 80%;
+            opacity: 0.7;
+        }
+
+        /* Listas */
+        ul, ol {
+            margin: 0 auto 20px auto;
+            max-width: 600px;
+            text-align: left; /* listas alinhadas à esquerda para melhor leitura */
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        /* Imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto 30px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(230, 57, 70, 0.7);
+        }
+
+        /* Tabela */
+        table {
+            width: 100%;
+            max-width: 900px;
+            border-collapse: collapse;
+            background-color: rgba(230, 57, 70, 0.1);
+            color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(230, 57, 70, 0.5);
+            margin: 0 auto 60px auto;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 0;
+            color: #e63946;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e63946;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e63946;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav.navbar a {
+                margin: 5px 10px;
+            }
+
+            section {
+                width: 95%;
+                margin: 20px auto;
+                padding: 20px;
+            }
+
+            ul, ol {
+                max-width: 100%;
+            }
+
+            table {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Fisiculturismo</a>
+            <nav class="navbar" role="navigation" aria-label="Menu principal">
+                <a href="#Inicio">Início</a>
+                <a href="#Sobre">Sobre</a>
+                <a href="Pagina/lista.html" target="_blank">Lista</a>
+                <a href="Pagina/tabela.html" target="_blank">Tabela</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Inicio">
+        <h1>Fisiculturismo</h1>
+        <h2>Por - Nicolas de Freitas</h2>
+        <p>
+            Fisiculturismo (português brasileiro) ou culturismo (português europeu) é o uso progressivo de exercícios de treinamento resistido para controlar e desenvolver a musculatura de uma pessoa para fins estéticos.
+            Um indivíduo que se envolve nessa atividade é chamado de fisiculturista ou culturista. No fisiculturismo profissional, os competidores aparecem nas filas e realizam poses especificadas (e, posteriormente, rotinas individuais de poses) para um painel de juízes que as classificam com base em simetria, muscularidade, tamanho, condicionamento, poses e apresentação no palco.
+            Os fisiculturistas se preparam para as competições através da eliminação da gordura corporal não essencial, aprimorada no último estágio por uma combinação de desidratação extracelular e saturação de carboidratos, para alcançar a máxima definição e vascularização muscular; eles também se bronzeiam e fazem a barba para acentuar o contraste de sua pele sob os holofotes.
+        </p>
+    </section>
+
+    <section id="Sobre">
+        <h1>Um Pouco Mais Sobre</h1>
+        <h2>Usos de esteroides e Campeonato</h2>
+        <p>
+            Alguns fisiculturistas usam esteróides anabolizantes e outras drogas para melhorar o desempenho e para construir músculos e se recuperar de lesões mais rapidamente, mas as competições às vezes proíbem de usá-los por causa dos riscos à saúde, fazendo até considerações sobre a concorrência leal. Apesar de alguns pedidos de testes para esteróides (essas substâncias podem ser detectadas na urina por um período de até seis meses), a principal federação de fisiculturismo (National Physique Committee) não o faz. O vencedor do concurso anual da Federação Internacional de Fisiculturismo (IFBB) Mr. Olympia é geralmente reconhecido como o melhor fisiculturista profissional masculino do mundo.
+        </p>
+    </section>
+
+
+
+
+
+
+
+</body>
+</html>
